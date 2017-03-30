@@ -1,0 +1,257 @@
+/*#region reset style */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  margin: 0;
+  line-height: 1;
+  font-size: 14px;
+  font-family: 'Gotham-Book', sans-serif;
+  background-color: #e0a633;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*#endregion */
+/*#region defaults */
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*#endregion */
+/*#region header */
+.site-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ea0707;
+}
+header {
+  margin-top: 20px;
+}
+header .logo,
+header .search-bar,
+header .login {
+  width: 30%;
+  height: 50px;
+  background-color: #49463f;
+}
+header .logo {
+  float: left;
+}
+header .search-bar {
+  float: left;
+  margin: 0 5%;
+}
+header .login {
+  float: right;
+}
+/*#endregion */
+/*#region main */
+.main {
+  width: 100%;
+  margin-top: 20px;
+}
+.main .slider {
+  width: 100%;
+  height: 400px;
+  background-color: #d6cbcb;
+}
+.main .options .popular,
+.main .options .signup,
+.main .options .actions {
+  width: 32%;
+  height: 300px;
+  background-color: #49463f;
+}
+.main .options .popular {
+  float: left;
+}
+.main .options .signup {
+  float: left;
+  margin: 0 2%;
+}
+.main .options .actions {
+  float: right;
+}
+.main .back-to-top {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #d6cbcb;
+}
+.main .about {
+  margin: 20px 0;
+}
+.main .about .meet-us,
+.main .about .partners,
+.main .about .help {
+  width: 30%;
+  height: 300px;
+  padding: 10px 0;
+  color: #fff;
+  background-color: #49463f;
+}
+.main .about .meet-us h1,
+.main .about .partners h1,
+.main .about .help h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main .about .meet-us p,
+.main .about .partners p,
+.main .about .help p {
+  line-height: 20px;
+}
+.main .about .meet-us {
+  float: left;
+  margin-left: 3%;
+}
+.main .about .partners {
+  float: left;
+  margin: 0 2%;
+}
+.main .about .help {
+  float: right;
+  margin-right: 3%;
+}
+/*#endregion */
+/*#region footer */
+footer {
+  height: 50px;
+  background-color: #d6cbcb;
+}
+footer .social,
+footer .logo,
+footer .terms-policy {
+  width: 33.33333%;
+}
+footer .social {
+  float: left;
+}
+footer .social .soc-wrapper {
+  display: table;
+  margin: 0 auto;
+}
+footer .social a {
+  margin: 0 10px;
+  line-height: 50px;
+}
+footer .logo {
+  float: left;
+  text-align: center;
+  line-height: 50px;
+}
+footer .terms-policy {
+  display: flex;
+  float: right;
+  padding-top: 18px;
+}
+footer .terms-policy li {
+  padding-right: 25px;
+  border-right: 1px solid #000;
+}
+footer .terms-policy li:last-child {
+  padding-left: 25px;
+  border-right: none;
+}
+/*#endregion */

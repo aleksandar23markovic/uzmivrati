@@ -1,0 +1,192 @@
+@import "variables.less";
+
+/*#region reset style */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strong, sub, sup, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    margin: 0;
+    line-height: 1;
+    font-size: 14px;
+    font-family: 'Gotham-Book', sans-serif;
+    background-color: @background-orange;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/*#endregion */
+
+/*#region defaults */
+
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*#endregion */
+
+/*#region header */
+.site-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid @dev-border;
+}
+
+header {
+    margin-top: 20px;
+    .logo, 
+    .search-bar,
+    .login {
+        width: 30%;
+        height: 50px;
+        background-color: @mockup-gray;
+    }
+    .logo {
+        float: left;
+    }
+    .search-bar {
+        float: left;
+        margin: 0 5%;
+    }
+    .login {
+        float: right;
+    }
+}
+/*#endregion */
+
+/*#region main */
+.main {
+    width: 100%;
+    margin-top: 20px;
+    .slider {
+        width: 100%;
+        height: 400px;
+        background-color: @mockup-lightgray;
+    }
+    .options {
+        .popular, .signup, .actions {
+            width: 32%;
+            height: 300px;
+            background-color: @mockup-gray;
+        }
+        .popular {
+            float: left;
+        }
+        .signup {
+            float: left;
+            margin: 0 2%;
+        }
+        .actions {
+            float: right;
+        }
+
+        
+    }
+    .back-to-top {
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background-color: @mockup-lightgray;
+    }
+    .about {
+        margin: 20px 0;
+        .meet-us, .partners, .help {
+            width: 30%;
+            height: 300px;
+            padding: 10px 0;
+            color: @white-text;
+            background-color: @mockup-gray;
+            h1 {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            p {
+                line-height: 20px;
+            }
+        }
+        .meet-us {
+            float: left;
+            margin-left: 3%;
+        }
+        .partners {
+            float: left;
+            margin: 0 2%;
+        }
+        .help {
+            float: right;
+            margin-right: 3%;
+        }
+    }
+}
+/*#endregion */
+
+/*#region footer */
+footer {
+    height: 50px;
+    background-color: @mockup-lightgray;
+    .social, 
+    .logo,
+    .terms-policy {
+        width: 33.33333%;
+    }
+    .social {
+        float: left;
+        .soc-wrapper {
+            display: table;
+            margin: 0 auto;
+        }
+        a {
+            margin: 0 10px;
+            line-height: 50px;
+        }
+    }  
+    .logo {
+        float: left;
+        text-align: center;
+        line-height: 50px;
+    } 
+    .terms-policy {
+        display: flex;
+        float: right;
+        padding-top: 18px;
+        li {
+            padding-right: 25px;
+            border-right: 1px solid @black-text;
+            &:last-child {
+                padding-left: 25px;
+                border-right: none;
+            }
+        }
+    }
+}
+/*#endregion */
