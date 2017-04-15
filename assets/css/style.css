@@ -122,7 +122,6 @@ a {
 .site-wrapper {
   width: 1200px;
   margin: 0 auto;
-  border: 1px solid #ea0707;
 }
 header {
   margin-top: 20px;
@@ -149,28 +148,6 @@ header .login {
 .main {
   width: 100%;
   margin-top: 20px;
-}
-.main .slider {
-  width: 100%;
-  height: 400px;
-  background-color: #d6cbcb;
-}
-.main .options .popular,
-.main .options .signup,
-.main .options .actions {
-  width: 32%;
-  height: 300px;
-  background-color: #49463f;
-}
-.main .options .popular {
-  float: left;
-}
-.main .options .signup {
-  float: left;
-  margin: 0 2%;
-}
-.main .options .actions {
-  float: right;
 }
 .main .back-to-top {
   width: 100%;
@@ -213,6 +190,51 @@ header .login {
 .main .about .help {
   float: right;
   margin-right: 3%;
+}
+/*#endregion */
+/*#region slider */
+.slider {
+  width: 100%;
+  height: 400px;
+}
+.slider #crossfade {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px #000;
+}
+.slider #crossfade li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slider #crossfade li img {
+  width: 100%;
+  height: 100%;
+}
+/*#endregion */
+/*#region options */
+.options {
+  margin-top: 20px;
+}
+.options .popular,
+.options .signup,
+.options .actions {
+  width: 32%;
+  height: 300px;
+  background-color: #49463f;
+}
+.options .popular {
+  float: left;
+}
+.options .signup {
+  float: left;
+  margin: 0 2%;
+}
+.options .actions {
+  float: right;
 }
 /*#endregion */
 /*#region footer */
