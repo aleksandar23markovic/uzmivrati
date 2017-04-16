@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Uzmivrati</title>
+	<link rel="stylesheet" href="vendor/slider/flexslider.css" type="text/css" media="screen" />
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -23,11 +25,13 @@
 	    <section class="main">
 	    	<!-- Slider -->
 	    	<div class="slider">
-	    		<ul id="crossfade">
-					<li><a href="#"><img src="assets/img/cameras.jpg"></a></li>
-					<li><a href="#"><img src="assets/img/desk.jpg"></a></li>
-					<li><a href=""><img src="assets/img/laptop.jpg"></a></li>
+	    	<div class="flexslider">
+	    		<ul class="slides">
+					<li><img src="assets/img/cameras.jpg"></li>
+					<li><img src="assets/img/desk.jpg"></li>
+					<li><img src="assets/img/laptop.jpg"></li>
 				</ul>
+	    	</div>
 	    	</div>
 	    	<!-- Options -->
 	    	<div class="options clearFix">
@@ -80,6 +84,7 @@
     </div>
 
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script defer src="vendor/slider/jquery.flexslider.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
