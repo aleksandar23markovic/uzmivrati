@@ -99,8 +99,8 @@ section {
 body {
   margin: 0;
   line-height: 1;
-  font-size: 14px;
-  font-family: 'Gotham-Book', sans-serif;
+  font-size: 18px;
+  font-family: 'Exo', sans-serif;
   background-color: #e0a633;
 }
 ol,
@@ -178,6 +178,8 @@ header .login {
 .main .about .meet-us p,
 .main .about .partners p,
 .main .about .help p {
+  padding: 0 15px;
+  font-size: 14px;
   line-height: 20px;
 }
 .main .about .meet-us {
@@ -230,24 +232,62 @@ header .login {
 /*#endregion */
 /*#region options */
 .options {
+  display: flex;
   margin-top: 20px;
+  font-weight: 600;
 }
 .options .popular,
 .options .signup,
 .options .actions {
   width: 32%;
   height: 300px;
+  border: 4px solid #000;
+  border-bottom: none;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   background-color: #49463f;
+  background: url(../img/white_blocks.jpg) no-repeat;
+  background-size: 100% 100%;
 }
-.options .popular {
-  float: left;
+.options .popular h1,
+.options .actions h1 {
+  text-align: center;
+  border-bottom: 1px solid #000;
+  padding: 10px;
+}
+.options .popular .first-item,
+.options .popular .second-item,
+.options .popular .third-item {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+}
+.options .popular .first-item img,
+.options .popular .second-item img,
+.options .popular .third-item img {
+  width: 80px;
+  height: 60px;
+  margin-left: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.options .popular .first-item i,
+.options .popular .second-item i,
+.options .popular .third-item i {
+  margin-right: 10px;
+}
+.options .popular .third-item {
+  margin-bottom: 0;
 }
 .options .signup {
-  float: left;
   margin: 0 2%;
 }
-.options .actions {
-  float: right;
+.options .signup h1 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
 }
 /*#endregion */
 /*#region footer */
